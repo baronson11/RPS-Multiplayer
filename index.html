@@ -5,36 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ultimate Multiplayer Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
   <body>
-    <section>
+    <section class="heading">
       <header>
         Rock Paper Scissors
       </header>
-      <span>The Multiplayer edition</span>
+      <span>online multiplayer edition</span>
     </section>
 
-    <section>
-      <h2>Score:</h2>
-      <h3>Player One: _ _</h3>
-      <h3>Player Two: _ _</h3>
-      <h3>Ties: _ _</h3>
-    </section>
+    <section class="scoreboard">
+      <h3 id="scoreTitle">Score:</h3>
 
-    <section>
-      <div>
-        Rock
+      <div class="playerOne">
+        <h3 class="playerOneName">Player One</h3>
+        <p class="playerOneScore">0</p>
       </div>
-      <div>
-        Paper
-      </div>
-      <div>
-        Scissors
+      <h4 class="vs">VS</h4>
+
+      <div class="playerTwo">
+        <h3 class="playerTwoName">Player Two</h3>
+        <p class="playerTwoScore">0</p>
       </div>
     </section>
 
-    <section>
+    <section class="select">
+      <div class="choices" data-name="rock">
+        <img src="assets/img/rock.png">
+      </div>
+      <div class="choices" data-name="paper">
+        <img src="assets/img/paper.png">
+      </div>
+      <div class="choices" data-name="scissors">
+        <img src="assets/img/scissors.png">
+      </div>
+    </section>
+
+    <section class="Chat_Section">
       <h3>Chatbox:</h3>
       <div class="chat_data">
         <p>test</p>

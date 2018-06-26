@@ -1,0 +1,56 @@
+/* universal styles */
+.heading {
+  border: solid red 1px;
+  text-align: center;
+  background-color: #191919;
+  color: #e4e4e4;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+/* Scoreboard */
+
+.scoreboard {
+  text-align: center;
+}
+
+#scoreTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.playerOne,
+.playerTwo,
+.vs {
+  border: solid red 1px;
+  display: inline-block;
+  background-color: #191919;
+  color: #e4e4e4;
+}
+
+/* rock, paper and scissor objects */
+
+.choices {
+  background-color: #e4e4e4;
+  color: #191919;
+  display: inline-block;
+  padding: 40px;
+  margin: 10px 20px;
+  border: solid #191919 1px;
+  border-radius: 50%;
+}
+
+.choices:hover {
+  cursor: pointer;
+  background-color: tomato;
+  transform: scale(1.1);
+  transition-property: transform background-color;
+  transition-duration: 0.2s;
+}
+
+img {
+  height: 70px;
+  width: 70px;
+}

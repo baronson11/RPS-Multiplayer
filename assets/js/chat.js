@@ -45,11 +45,11 @@ function removeMessages() {
 function gotData(data) {
   let messages = data.val();
   let keys = Object.keys(messages);
+  removeMessages();
   for (let i = 0; i < keys.length; i++) {
     let k = keys[i];
     let text = messages[k];
     let textInput = text.message;
-    removeMessages();
     populateMessages(textInput);
   }
 }
