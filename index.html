@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ultimate Multiplayer Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+  <body>
+    <section>
+      <header>
+        Rock Paper Scissors
+      </header>
+      <span>The Multiplayer edition</span>
+    </section>
+
+    <section>
+      <h2>Score:</h2>
+      <h3>Player One: _ _</h3>
+      <h3>Player Two: _ _</h3>
+      <h3>Ties: _ _</h3>
+    </section>
+
+    <section>
+      <div>
+        Rock
+      </div>
+      <div>
+        Paper
+      </div>
+      <div>
+        Scissors
+      </div>
+    </section>
+
+    <section>
+      <h3>Chatbox:</h3>
+      <div class="chat_data">
+        <p>test</p>
+      </div>
+      <form action="index.html" method="post" id="chat_box">
+        <input id="chat" name="user_message">
+        <button id="button" type="submit">Send</button>
+      </form>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="assets/js/chat.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
