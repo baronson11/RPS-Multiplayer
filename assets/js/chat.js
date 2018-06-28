@@ -1,6 +1,9 @@
 // CHATBOX ----------------------------------------------
+// Database Reference -----------------------------------
 
 let messagesRef = firebase.database().ref('messages');
+
+// ------------------------------------------------------
 
 const form = document.getElementById('chat_box');
 const chatText = document.getElementById('chat_text');

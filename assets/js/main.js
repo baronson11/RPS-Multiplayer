@@ -28,6 +28,9 @@ function getSelected(data) {
     prevPlayerChoice = input;
   }
   console.log(prevPlayerChoice);
+  if (keys.length >= 2) {
+    choiceRef.remove();
+  }
 }
 
 function testChoices(playerChoice, prevPlayerChoice) {
