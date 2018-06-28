@@ -7,13 +7,14 @@
   <title>Ultimate Multiplayer Rock, Paper, Scissors</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Francois+One|Gloria+Hallelujah" rel="stylesheet">
 </head>
   <body>
     <section class="heading">
       <header>
         Rock Paper Scissors
       </header>
-      <span>online multiplayer edition</span>
+      <span class="subheading">(online multiplayer edition)</span>
     </section>
 
     <section class="scoreboard">
@@ -23,6 +24,7 @@
         <h3 class="playerOneName">Player One</h3>
         <p class="playerOneScore">0</p>
       </div>
+
       <h4 class="vs">VS</h4>
 
       <div class="playerTwo">
@@ -32,29 +34,30 @@
     </section>
 
     <section class="select">
-      <div class="choices" data-name="rock">
-        <img src="assets/img/rock.png">
+      <div class="choices" data-name="rock" id="rock">
+        <img src="assets/img/rock.png" data-name="rock">
       </div>
-      <div class="choices" data-name="paper">
-        <img src="assets/img/paper.png">
+      <div class="choices" data-name="paper" id="paper">
+        <img src="assets/img/paper.png" data-name="paper">
       </div>
-      <div class="choices" data-name="scissors">
-        <img src="assets/img/scissors.png">
+      <div class="choices" data-name="scissors" id="scissors">
+        <img src="assets/img/scissors.png" data-name="scissors">
       </div>
     </section>
 
     <section class="Chat_Section">
-      <h3>Chatbox:</h3>
+      <h3 id="chatbox_title">Chatbox</h3>
       <div class="chat_data">
-        <p>test</p>
+        <p>Welcome to Ultimate Multiplayer RPS</p>
       </div>
       <form action="index.html" method="post" id="chat_box">
-        <input id="chat" name="user_message">
+        <input id="chat" name="user_message" placeholder=" talk smack to your opponent...">
         <button id="button" type="submit">Send</button>
       </form>
     </section>
 
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/chat.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
