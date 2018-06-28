@@ -15,8 +15,8 @@ let choiceRef = firebase.database().ref('choice');
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
 const scissors = document.getElementById('scissors');
-const p1score = document.querySelector('.playerOneScore');
-const p2score = document.querySelector('.playerTwoScore');
+const redTeamScore = document.querySelector('.redTeamScore');
+const blueTeamScore = document.querySelector('.blueTeamScore');
 
 function getSelected(data) {
   let choice = data.val();
@@ -33,30 +33,34 @@ function getSelected(data) {
   }
 }
 
+function initialize() {
+
+}
+
 function testChoices(playerChoice, prevPlayerChoice) {
   if (playerChoice === 'rock' && prevPlayerChoice === 'scissors') {
     playerOneScore++;
-    p1score.innerHTML = playerOneScore;
+    redTeamScore.innerHTML = playerOneScore;
   }
   if (playerChoice === 'scissors' && prevPlayerChoice ==='rock') {
     playerTwoScore++;
-    p2score.innerHTML = playerTwoScore;
+    blueTeamScore.innerHTML = playerTwoScore;
   }
   if (playerChoice === 'paper' && prevPlayerChoice ==='rock') {
     playerOneScore++;
-    p1score.innerHTML = playerOneScore;
+    redTeamScore.innerHTML = playerOneScore;
   }
   if (playerChoice === 'rock' && prevPlayerChoice === 'paper') {
     playerTwoScore++;
-    p2score.innerHTML = playerTwoScore;
+    blueTeamScore.innerHTML = playerTwoScore;
   }
   if (playerChoice === 'scissors' && prevPlayerChoice === 'paper') {
     playerOneScore++;
-    p1score.innerHTML = playerOneScore;
+    redTeamScore.innerHTML = playerOneScore;
   }
   if (playerChoice === 'paper' && prevPlayerChoice === 'scissors') {
     playerTwoScore++;
-    p2score.innerHTML = playerTwoScore;
+    blueTeamScore.innerHTML = playerTwoScore;
   }
 }
 
@@ -91,3 +95,11 @@ scissors.addEventListener('click', () => {
 });
 
 choiceRef.on('value', getSelected);
+
+
+// object holding GAME
+// make user pick which team and wait for an additional player
+// initialize round
+// turn-based
+// send data, get results, increase score as appropriate
+// initialize round again

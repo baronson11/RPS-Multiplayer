@@ -7,7 +7,7 @@ body {
 .heading {
   text-align: center;
   background-color: #191919;
-  color: #e4e4e4;
+  color: skyblue;
   padding: 40px 0;
   margin-bottom: 40px;
   font-size: 2.3em;
@@ -31,8 +31,8 @@ body {
   font-size: 2.2em;
 }
 
-.playerOne,
-.playerTwo,
+.redTeam,
+.blueTeam,
 .vs {
   display: inline-block;
   background-color: #191919;
@@ -41,6 +41,14 @@ body {
   margin: 10px;
   border-radius: 5px;
   font-size: 1.4em;
+}
+
+.redTeamName {
+  color: tomato;
+}
+
+.blueTeamName {
+  color: skyblue;
 }
 
 /* rock, paper and scissor objects */
@@ -113,6 +121,9 @@ img {
 
 #button:hover {
   cursor: pointer;
+  background-color: skyblue;
+  transition-property: background-color;
+  transition-duration: 0.2s;
 }
 
 .chat_data {
